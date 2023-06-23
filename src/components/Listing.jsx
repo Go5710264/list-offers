@@ -5,13 +5,12 @@ const Listing = ({data}) => {
         <div className='item-list'>
 
             {data.map((item) =>{
-                // console.log(item)
                 if(item.state === 'removed') return null;
 
                 const {MainImage: {url_570xN}} = item;
 
                 return (
-                    <div className='item'>
+                    <div className='item' key={item.category_id}>
                         <div className='item-image'>
                             <a href={item.url}>
                                 <img src={url_570xN}/>

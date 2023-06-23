@@ -1,5 +1,4 @@
 import React from 'react'
-import { render } from 'react-dom'
 import './App.css'
 import Listing from './components/Listing'
 import dataBase from './data.json'
@@ -10,7 +9,7 @@ console.log(data)
 function App() {
     return (
       <>
-        <Listing data={data}/>
+        <Listing data={data} />
       </>
     )
 }
